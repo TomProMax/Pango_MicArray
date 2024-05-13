@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tables>
+    <table id="compile_source_files" title="Design Files Read" column_number="2">
+        <column_headers>
+            <data>File Name</data>
+            <data>File Type</data>
+        </column_headers>
+        <row>
+            <data>E:/FPGA/PangoProjects/MicArray/source/MEMs_microphone_driver.sv</data>
+            <data>Verilog</data>
+        </row>
+    </table>
+    <table id="compile_runtime" title="Compile Runtime &amp; Memory" column_number="7">
+        <column_headers>
+            <data>Cpu Time</data>
+            <data>Process Cpu Time</data>
+            <data>Real Time</data>
+            <data>Peak Memory (MB)</data>
+            <data>Operation System</data>
+            <data>CPU</data>
+            <data>RAM(GB)</data>
+        </column_headers>
+        <row>
+            <data>0h:0m:0s</data>
+            <data>0h:0m:0s</data>
+            <data>0h:0m:4s</data>
+            <data>132</data>
+            <data>WINDOWS 10 x86_64</data>
+            <data>AMD Ryzen 5 5600 6-Core Processor</data>
+            <data>32</data>
+        </row>
+    </table>
+    <table id="compile_messages" title="Compile Messages" column_number="1">
+        <column_headers/>
+        <row>
+            <data message="4">Enable SystemVerilog features and keywords</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0001: Analyzing file E:/FPGA/PangoProjects/MicArray/source/MEMs_microphone_driver.sv</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0002: [E:/FPGA/PangoProjects/MicArray/source/MEMs_microphone_driver.sv(line number: 10)] Analyzing module MEMs_microphone_driver (library work)</data>
+        </row>
+        <row>
+            <data message="4">Module &quot;MEMs_microphone_driver&quot; is set as top module.</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0003: [E:/FPGA/PangoProjects/MicArray/source/MEMs_microphone_driver.sv(line number: 10)] Elaborating module MEMs_microphone_driver</data>
+        </row>
+        <row>
+            <data message="7">[E:/FPGA/PangoProjects/MicArray/source/MEMs_microphone_driver.sv(line number: 67)] Assignment Operator is not supported.</data>
+        </row>
+    </table>
+</tables>

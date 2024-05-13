@@ -1,0 +1,1 @@
+.rtl_screen -top_module {MEMs_microphone_driver} -include_path {<E:/FPGA/PangoProjects/MicArray>} -design_files {<E:/FPGA/PangoProjects/MicArray/source/MEMs_microphone_driver.sv|work>} -system_verilog
