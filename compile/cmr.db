@@ -6,8 +6,12 @@
             <data>File Type</data>
         </column_headers>
         <row>
-            <data>E:/FPGA/PangoProjects/MicArray/source/MEMs_microphone_driver.sv</data>
+            <data>E:/FPGA/PangoProjects/Pango_MicArray/source/MEMs_microphone_driver.sv</data>
             <data>Verilog</data>
+        </row>
+        <row>
+            <data>E:/FPGA/PangoProjects/Pango_MicArray/ipcore/mic_pll/mic_pll.idf</data>
+            <data>IP</data>
         </row>
     </table>
     <table id="compile_runtime" title="Compile Runtime &amp; Memory" column_number="7">
@@ -23,7 +27,7 @@
         <row>
             <data>0h:0m:0s</data>
             <data>0h:0m:0s</data>
-            <data>0h:0m:4s</data>
+            <data>0h:0m:3s</data>
             <data>143</data>
             <data>WINDOWS 10 x86_64</data>
             <data>AMD Ryzen 5 5600 6-Core Processor</data>
@@ -36,28 +40,115 @@
             <data message="4">Enable SystemVerilog features and keywords</data>
         </row>
         <row>
-            <data message="4">Verilog-0001: Analyzing file E:/FPGA/PangoProjects/MicArray/source/MEMs_microphone_driver.sv</data>
+            <data message="4">Verilog-0001: Analyzing file E:/FPGA/PangoProjects/Pango_MicArray/source/MEMs_microphone_driver.sv</data>
         </row>
         <row>
-            <data message="4">Verilog-0002: [E:/FPGA/PangoProjects/MicArray/source/MEMs_microphone_driver.sv(line number: 10)] Analyzing module MEMs_microphone_driver (library work)</data>
+            <data message="4">Verilog-0002: [E:/FPGA/PangoProjects/Pango_MicArray/source/MEMs_microphone_driver.sv(line number: 10)] Analyzing module MEMs_microphone_driver (library work)</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0001: Analyzing file E:/FPGA/PangoProjects/Pango_MicArray/ipcore/mic_pll/mic_pll.v</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0002: [E:/FPGA/PangoProjects/Pango_MicArray/ipcore/mic_pll/mic_pll.v(line number: 20)] Analyzing module mic_pll (library work)</data>
         </row>
         <row>
             <data message="4">Module &quot;MEMs_microphone_driver&quot; is set as top module.</data>
         </row>
         <row>
-            <data message="4">Verilog-0003: [E:/FPGA/PangoProjects/MicArray/source/MEMs_microphone_driver.sv(line number: 10)] Elaborating module MEMs_microphone_driver</data>
+            <data message="4">Verilog-0003: [E:/FPGA/PangoProjects/Pango_MicArray/source/MEMs_microphone_driver.sv(line number: 10)] Elaborating module MEMs_microphone_driver</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0004: [E:/FPGA/PangoProjects/Pango_MicArray/source/MEMs_microphone_driver.sv(line number: 43)] Elaborating instance mic_pll</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0003: [E:/FPGA/PangoProjects/Pango_MicArray/ipcore/mic_pll/mic_pll.v(line number: 20)] Elaborating module mic_pll</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0004: [E:/FPGA/PangoProjects/Pango_MicArray/ipcore/mic_pll/mic_pll.v(line number: 230)] Elaborating instance u_pll_e3</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [E:/FPGA/PangoProjects/Pango_MicArray/ipcore/mic_pll/mic_pll.v(line number: 117)] Net clkfb in mic_pll(original module mic_pll) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [E:/FPGA/PangoProjects/Pango_MicArray/ipcore/mic_pll/mic_pll.v(line number: 120)] Net pfden in mic_pll(original module mic_pll) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [E:/FPGA/PangoProjects/Pango_MicArray/ipcore/mic_pll/mic_pll.v(line number: 121)] Net clkout0_gate in mic_pll(original module mic_pll) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [E:/FPGA/PangoProjects/Pango_MicArray/ipcore/mic_pll/mic_pll.v(line number: 122)] Net clkout0_2pad_gate in mic_pll(original module mic_pll) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [E:/FPGA/PangoProjects/Pango_MicArray/ipcore/mic_pll/mic_pll.v(line number: 123)] Net clkout1_gate in mic_pll(original module mic_pll) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [E:/FPGA/PangoProjects/Pango_MicArray/ipcore/mic_pll/mic_pll.v(line number: 124)] Net clkout2_gate in mic_pll(original module mic_pll) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [E:/FPGA/PangoProjects/Pango_MicArray/ipcore/mic_pll/mic_pll.v(line number: 125)] Net clkout3_gate in mic_pll(original module mic_pll) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [E:/FPGA/PangoProjects/Pango_MicArray/ipcore/mic_pll/mic_pll.v(line number: 126)] Net clkout4_gate in mic_pll(original module mic_pll) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [E:/FPGA/PangoProjects/Pango_MicArray/ipcore/mic_pll/mic_pll.v(line number: 127)] Net clkout5_gate in mic_pll(original module mic_pll) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [E:/FPGA/PangoProjects/Pango_MicArray/ipcore/mic_pll/mic_pll.v(line number: 128)] Net dyn_idiv in mic_pll(original module mic_pll) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [E:/FPGA/PangoProjects/Pango_MicArray/ipcore/mic_pll/mic_pll.v(line number: 129)] Net dyn_odiv0 in mic_pll(original module mic_pll) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [E:/FPGA/PangoProjects/Pango_MicArray/ipcore/mic_pll/mic_pll.v(line number: 130)] Net dyn_odiv1 in mic_pll(original module mic_pll) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [E:/FPGA/PangoProjects/Pango_MicArray/ipcore/mic_pll/mic_pll.v(line number: 131)] Net dyn_odiv2 in mic_pll(original module mic_pll) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [E:/FPGA/PangoProjects/Pango_MicArray/ipcore/mic_pll/mic_pll.v(line number: 132)] Net dyn_odiv3 in mic_pll(original module mic_pll) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [E:/FPGA/PangoProjects/Pango_MicArray/ipcore/mic_pll/mic_pll.v(line number: 133)] Net dyn_odiv4 in mic_pll(original module mic_pll) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [E:/FPGA/PangoProjects/Pango_MicArray/ipcore/mic_pll/mic_pll.v(line number: 134)] Net dyn_fdiv in mic_pll(original module mic_pll) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [E:/FPGA/PangoProjects/Pango_MicArray/ipcore/mic_pll/mic_pll.v(line number: 135)] Net dyn_duty0 in mic_pll(original module mic_pll) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [E:/FPGA/PangoProjects/Pango_MicArray/ipcore/mic_pll/mic_pll.v(line number: 136)] Net dyn_duty1 in mic_pll(original module mic_pll) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [E:/FPGA/PangoProjects/Pango_MicArray/ipcore/mic_pll/mic_pll.v(line number: 137)] Net dyn_duty2 in mic_pll(original module mic_pll) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [E:/FPGA/PangoProjects/Pango_MicArray/ipcore/mic_pll/mic_pll.v(line number: 138)] Net dyn_duty3 in mic_pll(original module mic_pll) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2021: [E:/FPGA/PangoProjects/Pango_MicArray/ipcore/mic_pll/mic_pll.v(line number: 139)] Net dyn_duty4 in mic_pll(original module mic_pll) does not have a driver, tie it to 0</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0004: [E:/FPGA/PangoProjects/Pango_MicArray/source/MEMs_microphone_driver.sv(line number: 53)] Elaborating instance u_GTP_CLKBUFGCE</data>
+        </row>
+        <row>
+            <data message="5">Verilog-2024: [E:/FPGA/PangoProjects/Pango_MicArray/source/MEMs_microphone_driver.sv(line number: 10)] Give an initial value for the no drive output pin q in graph of sdm module MEMs_microphone_driver</data>
         </row>
         <row>
             <data message="5">Loop was found during constant probe.</data>
         </row>
         <row>
-            <data message="4">Constant propagation done on N161 (bmsPMUX).</data>
+            <data message="4">Constant propagation done on N186 (bmsPMUX).</data>
         </row>
         <row>
-            <data message="4">Constant propagation done on N167 (bmsPMUX).</data>
+            <data message="4">Constant propagation done on N192 (bmsPMUX).</data>
         </row>
         <row>
-            <data message="4">Constant propagation done on N144 (bmsPMUX).</data>
+            <data message="4">Constant propagation done on N178 (bmsPMUX).</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on N173 (bmsWIDEMUX).</data>
         </row>
     </table>
     <general_container id="compile_settings">
@@ -91,12 +182,12 @@
                     </row>
                     <row>
                         <data>Allow Duplicate Modules</data>
-                        <data>false</data>
+                        <data>true</data>
                     </row>
                     <row>
                         <data>Include Path Order: 
  (Relative to Verilog File)</data>
-                        <data>E:/FPGA/PangoProjects/MicArray	</data>
+                        <data>E:/FPGA/PangoProjects/Pango_MicArray	</data>
                     </row>
                     <row>
                         <data>Parameters/Generics</data>

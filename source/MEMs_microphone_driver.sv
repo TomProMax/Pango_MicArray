@@ -3,13 +3,13 @@
  * @Author: Tomood
  * @Date: 2024-05-13 22:07:58
  * @LastEditors: Tomood
- * @LastEditTime: 2024-05-14 04:33:26
- * @FilePath: \undefinede:\FPGA\PangoProjects\MicArray\source\MEMs_microphone_driver.sv
+ * @LastEditTime: 2024-05-14 14:09:06
+ * @FilePath: \undefinede:\FPGA\PangoProjects\Pango_MicArray\source\MEMs_microphone_driver.sv
  * Copyright (c) 2024 by Tomood, All Rights Reserved. 
  */
 module MEMs_microphone_driver (
     //sys
-    input  logic          clk,             //模块逻辑工作时钟
+    input  logic          osc_clk,         //模块逻辑工作时钟 需要输入10MHz时钟
     input  logic          rst_n,           //复位
     //mic0 i2s interface
     output logic          mic_sck,         //mic时钟输入(由FPGA向i2s-Slave提供)
@@ -24,7 +24,9 @@ module MEMs_microphone_driver (
     output logic [24-1:0] mic2_data_o,     //麦克风2信号解析输出
     output logic [24-1:0] mic3_data_o,     //麦克风3信号解析输出
     output logic [24-1:0] mic4_data_o,     //麦克风4信号解析输出
-    output logic [24-1:0] mic5_data_o      //麦克风5信号解析输出
+    output logic [24-1:0] mic5_data_o,      //麦克风5信号解析输出、
+    input logic d,
+    output logic q
 
 );
   //********************************************************************//
@@ -37,12 +39,20 @@ module MEMs_microphone_driver (
   //********************************************************************//
   //***************************   Main Code   **************************//
   //********************************************************************//
+//mic_pll:用于产生10Mhz时钟
+  mic_pll mic_pll (
+      .clkin1  (osc_clk),   // input
+      .pll_lock(pll_lock),  // output
+      .clkout0 (clk)        // output
+  );
+
   //GTP_CLKBUFGCE：时钟使能原语
   GTP_CLKBUFGCE #(
-      .DEFAULT_VALUE(1'b1)
-  ) I_GTP_CLKBUFGCE (
+      .DEFAULT_VALUE(1'b1),
+      .SIM_DEVICE("LOGOS")
+  ) u_GTP_CLKBUFGCE (
       .CLKIN(clk),
-      .CE(rst_n),
+      .CE(pll_lock & rst_n),
       .CLKOUT(mic_sck)
   );
 

@@ -12,3 +12,84 @@ set_arch -family Logos -device PGL50H -speedgrade -6 -package FBG484
 compile -system_verilog -top_module MEMs_microphone_driver
 set_arch -family Logos -device PGL50H -speedgrade -6 -package FBG484
 compile -system_verilog -top_module MEMs_microphone_driver
+add_design "E:/FPGA/PangoProjects/Pango_MicArray/source/top.v"
+remove_design -force -verilog "E:/FPGA/PangoProjects/Pango_MicArray/source/top.v"
+set_arch -family Logos -device PGL50H -speedgrade -6 -package FBG484
+compile -system_verilog -top_module MEMs_microphone_driver
+add_design E:/FPGA/PangoProjects/Pango_MicArray/ipcore/mic_pll/mic_pll.idf
+set_arch -family Logos -device PGL50H -speedgrade -6 -package FBG484
+compile -system_verilog -top_module MEMs_microphone_driver
+add_constraint "E:/FPGA/PangoProjects/Pango_MicArray/MicArray.fdc"
+synthesize -ads -selected_syn_tool_opt 2 
+synthesize -ads -selected_syn_tool_opt 2 
+set_arch -family Logos -device PGL50H -speedgrade -6 -package FBG484
+compile -system_verilog -allow_duplicate_modules -top_module MEMs_microphone_driver
+synthesize -ads -selected_syn_tool_opt 2 
+set_arch -family Logos -device PGL50H -speedgrade -6 -package FBG484
+compile -system_verilog -allow_duplicate_modules -top_module MEMs_microphone_driver
+set_arch -family Logos -device PGL50H -speedgrade -6 -package FBG484
+compile -system_verilog -allow_duplicate_modules -top_module MEMs_microphone_driver
+set_arch -family Logos -device PGL50H -speedgrade -6 -package FBG484
+compile -system_verilog -allow_duplicate_modules -top_module MEMs_microphone_driver
+synthesize -ads -selected_syn_tool_opt 2 
+set_arch -family Logos -device PGL50H -speedgrade -6 -package FBG484
+compile -system_verilog -allow_duplicate_modules -top_module MEMs_microphone_driver
+synthesize -ads -selected_syn_tool_opt 2 
+set_arch -family Logos -device PGL50H -speedgrade -6 -package FBG484
+compile -system_verilog -allow_duplicate_modules -top_module MEMs_microphone_driver
+synthesize -ads -selected_syn_tool_opt 2 
+set_arch -family Logos -device PGL50H -speedgrade -6 -package FBG484
+compile -system_verilog -allow_duplicate_modules -top_module MEMs_microphone_driver
+synthesize -ads -selected_syn_tool_opt 2 
+set_arch -family Logos -device PGL50H -speedgrade -6 -package FBG484
+compile -system_verilog -allow_duplicate_modules -top_module MEMs_microphone_driver
+set_arch -family Logos -device PGL50H -speedgrade -6 -package FBG484
+compile -system_verilog -allow_duplicate_modules -top_module MEMs_microphone_driver
+synthesize -ads -selected_syn_tool_opt 2 
+set_arch -family Logos -device PGL50H -speedgrade -6 -package FBG484
+compile -system_verilog -allow_duplicate_modules -top_module MEMs_microphone_driver
+synthesize -ads -selected_syn_tool_opt 2 
+set_arch -family Logos -device PGL50H -speedgrade -6 -package FBG484
+compile -system_verilog -allow_duplicate_modules -top_module MEMs_microphone_driver
+synthesize -ads -selected_syn_tool_opt 2 
+dev_map 
+pnr 
+add_fic "E:/FPGA/PangoProjects/Pango_MicArray/synthesize/MEMs_microphone_driver_syn.fic"
+set_arch -family Logos -device PGL50H -speedgrade -6 -package FBG484
+compile -system_verilog -allow_duplicate_modules -top_module MEMs_microphone_driver
+synthesize -ads -selected_syn_tool_opt 2 
+dev_map 
+pnr 
+report_timing 
+gen_bit_stream 
+set_arch -family Logos -device PGL50H -speedgrade -6 -package FBG484
+compile -system_verilog -allow_duplicate_modules -top_module MEMs_microphone_driver
+synthesize -ads -selected_syn_tool_opt 2 
+dev_map 
+pnr 
+set_arch -family Logos -device PGL50H -speedgrade -6 -package FBG484
+compile -system_verilog -allow_duplicate_modules -top_module MEMs_microphone_driver
+synthesize -ads -selected_syn_tool_opt 2 
+dev_map 
+pnr 
+set_arch -family Logos -device PGL50H -speedgrade -6 -package FBG484
+compile -system_verilog -allow_duplicate_modules -top_module MEMs_microphone_driver
+synthesize -ads -selected_syn_tool_opt 2 
+dev_map 
+pnr 
+report_timing 
+gen_bit_stream 
+set_arch -family Logos -device PGL50H -speedgrade -6 -package FBG484
+compile -system_verilog -allow_duplicate_modules -top_module MEMs_microphone_driver
+synthesize -ads -selected_syn_tool_opt 2 
+dev_map 
+pnr 
+report_timing 
+gen_bit_stream 
+set_arch -family Logos -device PGL50H -speedgrade -6 -package FBG484
+compile -system_verilog -allow_duplicate_modules -top_module MEMs_microphone_driver
+synthesize -ads -selected_syn_tool_opt 2 
+dev_map 
+pnr 
+report_timing 
+gen_bit_stream 
