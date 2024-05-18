@@ -24,10 +24,7 @@ module MEMs_microphone_driver (
     output logic [24-1:0] mic2_data_o,     //麦克风2信号解析输出
     output logic [24-1:0] mic3_data_o,     //麦克风3信号解析输出
     output logic [24-1:0] mic4_data_o,     //麦克风4信号解析输出
-    output logic [24-1:0] mic5_data_o,      //麦克风5信号解析输出、
-    input logic d,
-    output logic q
-
+    output logic [24-1:0] mic5_data_o      //麦克风5信号解析输出
 );
   //********************************************************************//
   //****************** Parameter and Internal Signal *******************//

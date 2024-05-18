@@ -28,7 +28,7 @@
             <data>0h:0m:0s</data>
             <data>0h:0m:0s</data>
             <data>0h:0m:3s</data>
-            <data>143</data>
+            <data>144</data>
             <data>WINDOWS 10 x86_64</data>
             <data>AMD Ryzen 5 5600 6-Core Processor</data>
             <data>32</data>
@@ -58,7 +58,7 @@
             <data message="4">Verilog-0003: [E:/FPGA/PangoProjects/Pango_MicArray/source/MEMs_microphone_driver.sv(line number: 10)] Elaborating module MEMs_microphone_driver</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [E:/FPGA/PangoProjects/Pango_MicArray/source/MEMs_microphone_driver.sv(line number: 43)] Elaborating instance mic_pll</data>
+            <data message="4">Verilog-0004: [E:/FPGA/PangoProjects/Pango_MicArray/source/MEMs_microphone_driver.sv(line number: 40)] Elaborating instance mic_pll</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [E:/FPGA/PangoProjects/Pango_MicArray/ipcore/mic_pll/mic_pll.v(line number: 20)] Elaborating module mic_pll</data>
@@ -130,25 +130,22 @@
             <data message="5">Verilog-2021: [E:/FPGA/PangoProjects/Pango_MicArray/ipcore/mic_pll/mic_pll.v(line number: 139)] Net dyn_duty4 in mic_pll(original module mic_pll) does not have a driver, tie it to 0</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [E:/FPGA/PangoProjects/Pango_MicArray/source/MEMs_microphone_driver.sv(line number: 53)] Elaborating instance u_GTP_CLKBUFGCE</data>
-        </row>
-        <row>
-            <data message="5">Verilog-2024: [E:/FPGA/PangoProjects/Pango_MicArray/source/MEMs_microphone_driver.sv(line number: 10)] Give an initial value for the no drive output pin q in graph of sdm module MEMs_microphone_driver</data>
+            <data message="4">Verilog-0004: [E:/FPGA/PangoProjects/Pango_MicArray/source/MEMs_microphone_driver.sv(line number: 50)] Elaborating instance u_GTP_CLKBUFGCE</data>
         </row>
         <row>
             <data message="5">Loop was found during constant probe.</data>
         </row>
         <row>
-            <data message="4">Constant propagation done on N186 (bmsPMUX).</data>
+            <data message="4">Constant propagation done on N184 (bmsPMUX).</data>
         </row>
         <row>
-            <data message="4">Constant propagation done on N192 (bmsPMUX).</data>
+            <data message="4">Constant propagation done on N190 (bmsPMUX).</data>
         </row>
         <row>
-            <data message="4">Constant propagation done on N178 (bmsPMUX).</data>
+            <data message="4">Constant propagation done on N176 (bmsPMUX).</data>
         </row>
         <row>
-            <data message="4">Constant propagation done on N173 (bmsWIDEMUX).</data>
+            <data message="4">Constant propagation done on N171 (bmsWIDEMUX).</data>
         </row>
     </table>
     <general_container id="compile_settings">
